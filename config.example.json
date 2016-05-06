@@ -1,0 +1,5 @@
+{
+  "host": "https://api.booli.se/",
+  "callerId": "<callerId-here>",
+  "privateKey": "<privateKey-here>"
+}
