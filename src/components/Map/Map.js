@@ -2,7 +2,7 @@ import React, { Component, PropTypes } from 'react'
 import CSSModules from 'react-css-modules'
 import styles from './Map.css'
 import GoogleMap from 'google-map-react'
-import House from './House'
+import House from '../House/House'
 
 export class Map extends Component {
   _renderHouses () {
@@ -15,6 +15,7 @@ export class Map extends Component {
         <House
           key={i}
           lat={house.location.position.latitude}
+          listing={house}
           lng={house.location.position.longitude} />
       )
     })
